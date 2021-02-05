@@ -1,0 +1,479 @@
+@font-face {
+  font-family: "Gotham Pro Light";
+  src: url("../fonts/GothamPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro Medium";
+  src: url("../fonts/GothamPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+*,
+*:after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  background-color: #292929;
+  color: #fff;
+  font-family: "Gotham Pro", sans-serif;
+  margin: 0;
+}
+.header {
+  padding-top: 50px;
+}
+.header-description {
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Gotham Pro Light";
+  letter-spacing: 0.2px;
+}
+.info-text-color {
+  color: #ff3469;
+  font-family: "Gotham Pro Medium";
+}
+.header-phone {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: right;
+  display: block;
+}
+.header-info {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 7px;
+  display: block;
+  text-align: right;
+}
+.collback {
+  color: #ff3469;
+  font-family: "Gotham Pro";
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  text-align: right;
+  margin-top: 16px;
+}
+.hero {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 77px;
+  border-bottom: 1px solid #4c4c4c;
+}
+.hero-title {
+  font-family: "Gotham Pro Medium";
+  font-size: 34px;
+  margin: auto;
+  margin-bottom: 34px;
+  font-weight: 500;
+  margin-top: 123px;
+  text-transform: uppercase;
+  max-width: 692px;
+}
+
+.hero-description {
+  font-family: "Gotham Pro Light";
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 1.4;
+  margin: auto;
+  text-transform: uppercase;
+  max-width: 590px;
+}
+.hero-text {
+  font-family: "Gotham Pro Medium";
+  font-weight: 500;
+}
+.flowers-slider {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 83px;
+}
+:root {
+  --swiper-navigation-size: 19px;
+}
+.button-swiper-prev {
+  color: #fff;
+}
+.button-swiper-next {
+  color: #ff2e55;
+}
+.hero-cta {
+  display: block;
+  font-family: "Gotham Pro";
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 36px;
+}
+.button {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  background-color: #ff2e55;
+  padding-top: 30px;
+  padding-bottom: 26px;
+  padding-left: 65px;
+  padding-right: 65px;
+  margin-top: 36px;
+  cursor: pointer;
+  border: none;
+}
+.reviews {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.reviews-slider {
+  margin-top: 98px;
+}
+.review-slide {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.review-image {
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 50%;
+  flex-shrink: 0;
+  font-size: 20px;
+  font-family: "Gotham Pro Light";
+  position: relative;
+  margin-right: 52px;
+}
+.review-image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+.review-image > * {
+  position: relative;
+}
+.review-image-1 {
+  background: #000 url("../img/reiews/reiews-1.jpg");
+}
+.review-image-2 {
+  background: #000 url("../img/reiews/reiews-2.jpg");
+}
+.review-name {
+  margin-bottom: 7px;
+}
+.review-text {
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 1.4;
+}
+.review-link {
+  color: #f24841;
+}
+.review-button {
+  color: #f24841;
+}
+.section-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.3px;
+  font-family: "Gotham Pro";
+  font-size: 30px;
+  font-weight: 500;
+}
+.advantages {
+  padding-bottom: 100px;
+  padding-top: 50px;
+  text-align: center;
+  border-bottom: 1px solid #4c4c4c;
+}
+.advantages-wrapper {
+  min-height: 85px;
+  margin-bottom: 30px;
+}
+.advantages-text {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Gotham Pro Medium";
+  line-height: 1.4;
+  max-width: 270px;
+  margin: auto;
+}
+.goods {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.section-description {
+  font-size: 18px;
+  text-align: center;
+}
+.card {
+  text-align: center;
+  border: 3px solid #fff;
+  padding: 33px 35px 30px 35px;
+  margin-top: 27px;
+}
+.card-title {
+  margin-top: 23px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.card-label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 7px;
+  margin-top: 20px;
+}
+.color-label {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  cursor: pointer;
+}
+.color-input {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: -9;
+}
+.color-label.white {
+  background-color: #fff;
+}
+.color-label.biege {
+  background-color: #f7b496;
+}
+.color-label.pink {
+  background-color: #ed366e;
+}
+.color-label.red {
+  background-color: #ff0000;
+}
+.color-label.blue {
+  background-color: #12129d;
+}
+.counter-input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #292929;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.counter-button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  background-color: #292929;
+  border: none;
+}
+.card-button {
+  font-size: 14px;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.more {
+  font-size: 14px;
+  color: #f24841;
+  display: block;
+  text-align: center;
+  margin-top: 39px;
+  padding: 10px;
+}
+.more::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 4px;
+  background: url("../img/caret.svg") no-repeat center;
+  margin-left: 14px;
+  vertical-align: middle;
+}
+.section-title {
+  text-align: center;
+  font-family: "Gotham Pro";
+  font-size: 30px;
+  font-weight: 500;
+}
+.offer {
+  padding-top: 100px;
+  padding-bottom: 84px;
+  text-align: center;
+  background-color: #1a1a1a;
+}
+.offer-link {
+  display: block;
+  font-family: "Gotham Pro";
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 53px;
+}
+.offer-text {
+  font-family: "Gotham Pro";
+  font-size: 14px;
+  font-weight: 400;
+}
+.offer-phone {
+  display: block;
+  text-decoration: none;
+  font-family: "Gotham Pro";
+  font-size: 36px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 22px;
+}
+.footer-menu {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 33px;
+}
+.footer-menu-item {
+  margin-right: 10px;
+}
+.footer-menu-link {
+  color: #ffffff;
+  font-family: "Gotham Pro";
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+.footer-vk {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin-top: 33px;
+  font-family: "Gotham Pro";
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-vk-logo {
+  margin-left: 20px;
+}
+.footer-label {
+  font-family: "Gotham Pro";
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  margin-top: 12px;
+}
+.footer-phone {
+  color: #ffffff;
+  font-family: "Gotham Pro";
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+.footer-info {
+  text-align: right;
+}
+.footer-white {
+  background-color: #fff;
+}
+.footer-description {
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Gotham Pro Light";
+  letter-spacing: 0.2px;
+  color: #292929;
+}
+.footer-text,
+.footer-developer {
+  font-family: "Myriad Pro";
+  font-size: 12px;
+  font-weight: 400;
+  color: #101010;
+  text-align: right;
+}
+.modal {
+  display: none;
+}
+.modal-title {
+  color: #292929;
+}
+.modal-button {
+  width: 100%;
+}
+.modal-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+  .header-phone {
+    text-align: center;
+  }
+  .header-info {
+    text-align: center;
+  }
+  .collback {
+    text-align: center;
+  }
+  .hero {
+    padding-top: 50px;
+  }
+  .hero-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .colors {
+    max-width: 200px;
+    margin: auto;
+  }
+  .card-label {
+    margin: 20px auto;
+    display: block;
+  }
+  .footer-info {
+    text-align: left;
+  }
+}
+@media (max-width: 576px) {
+  .offer,
+  .footer-info,
+  .offer-title {
+    text-align: left;
+  }
+}
